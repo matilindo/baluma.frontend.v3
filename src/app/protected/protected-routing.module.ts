@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AivaComponent } from './aiva/aiva/aiva.component';
+import { AivaComponent } from './aiva/aiva.component';
 import { GirhComponent } from './girh/girh.component';
 import { OnlineComponent } from './online/online.component';
 

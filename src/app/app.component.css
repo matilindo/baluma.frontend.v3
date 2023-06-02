@@ -1,0 +1,8 @@
+.container-full {
+    width: 100vw; /* El 100% del ancho de la ventana */
+    height: 100vh; /* El 100% de la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para evitar que haya barras de desplazamiento */
+  }
+  

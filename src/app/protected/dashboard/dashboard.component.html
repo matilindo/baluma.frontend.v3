@@ -1,34 +1,47 @@
 
-  
-  <h1>Dashboard</h1>
-  <hr>
   <mat-drawer-container class="example-container" >
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-drawer #drawer class="example-sidenav" mode="side" style="border:0px ;">
         <div class="example-sidenav-content">
             <mat-nav-list class="sidebar-nav">
-                <mat-list-item class="colorCorporative">
-                  <mat-icon matListIcon >chat</mat-icon>
-                  <a matLine routerLink="/dashboard/aiva">AIVA</a>
-                </mat-list-item>
-                <mat-list-item class="colorCorporative">
-                  <mat-icon matListIcon >mobile_screen_share</mat-icon>
-                  <a matLine routerLink="/dashboard/online">ONLINE</a>
-                </mat-list-item>
-                <mat-list-item class="colorCorporative"> 
-                  <mat-icon matListIcon >recent_actors</mat-icon>
-                  <a matLine routerLink="/dashboard/girh">GIRH</a>
-                </mat-list-item>
+                <mat-card class="transparente">
+                  <div class="center-content">
+                    <app-toolbar-sidenav class="transparente"></app-toolbar-sidenav>
+                    <div class="avatar">
+                      <img src="assets/007531.jpg" alt="Descripción de la imagen">
+                    </div>
+                    <br> 
+                    <h2 style="color:aliceblue">Matias Osuna</h2>                   
+                    <span style="color:aliceblue">{{usuario.email}}</span>
+                    <br>
+                  </div>
+                </mat-card>
+                <mat-card class="transparente">
+                  <mat-card-header>
+                    <h3 style="color:blueviolet">DASHBOARD</h3>
+                  </mat-card-header>
+                  <mat-selection-list #shoes>
+                    <mat-list-item class="center-item" >
+                      <mat-icon matListIcon style="margin-right: 10%;color: aliceblue">chat</mat-icon>
+                      <a class="no-underline" matLine routerLink="/dashboard/aiva" style="color: aliceblue">AIVA</a>
+                    </mat-list-item>
+                    <mat-list-item class="center-item">
+                      <mat-icon matListIcon style="margin-right: 10%;color: aliceblue">mobile_screen_share</mat-icon>
+                      <a class="no-underline" matLine routerLink="/dashboard/online" style="color: aliceblue">ONLINE</a>
+                    </mat-list-item>
+                    <mat-list-item class="center-item">
+                      <mat-icon matListIcon style="margin-right: 10%;color: aliceblue">recent_actors</mat-icon>
+                      <a class="no-underline" matLine routerLink="/dashboard/girh" style="color: aliceblue">GIRH</a>
+                    </mat-list-item>
+                  </mat-selection-list>
+                  
+              </mat-card>
               </mat-nav-list>
         </div>    
     </mat-drawer>
-        <mat-toolbar color="primary">
+        <mat-toolbar style="background-color: coral;">
             <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
             <mat-icon>menu</mat-icon>
             </button>
-            <span>Mis app</span>
-            <span class="example-spacer"></span>
-            
-            <span>{{usuario.email}}</span>
             <span class="example-spacer"></span>
             <button mat-raised-button  (click)="logout()">Logout</button>
             <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
@@ -40,3 +53,4 @@
         </mat-toolbar>
         <router-outlet></router-outlet>
   </mat-drawer-container>
+

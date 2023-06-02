@@ -8,10 +8,11 @@ import { AivaModule } from './aiva/aiva.module';
 import { GirhModule } from './girh/girh.module';
 import { OnlineComponent } from './online/online.component';
 import { OnlineModule } from './online/online.module';
+import { ToolbarSidenavComponent } from './components/toolbar-sidenav/toolbar-sidenav.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [DashboardComponent, ToolbarSidenavComponent],
   imports: [
     CommonModule,
     ProtectedRoutingModule,

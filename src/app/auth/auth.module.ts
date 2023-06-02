@@ -7,6 +7,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -20,7 +21,8 @@ import { RouterModule } from '@angular/router';
     AuthRoutingModule,
     MaterialModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class AuthModule { }

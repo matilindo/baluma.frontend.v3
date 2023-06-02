@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AivaComponent } from './aiva.component';
+import { ToolbarSidenavComponent } from './toolbar-sidenav.component';
 
-describe('AivaComponent', () => {
-  let component: AivaComponent;
-  let fixture: ComponentFixture<AivaComponent>;
+describe('ToolbarSidenavComponent', () => {
+  let component: ToolbarSidenavComponent;
+  let fixture: ComponentFixture<ToolbarSidenavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AivaComponent ]
+      declarations: [ ToolbarSidenavComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AivaComponent);
+    fixture = TestBed.createComponent(ToolbarSidenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

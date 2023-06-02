@@ -35,6 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSnackBarModule,
     MatToolbarModule,
     MatSidenavModule,
-  ]
+    MatInputModule,
+     
+    ]
 })
 export class MaterialModule { }
